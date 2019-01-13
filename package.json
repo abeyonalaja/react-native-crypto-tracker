@@ -4,7 +4,12 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "postinstall": "remotedev-debugger --hotname localhost --port 5678 --injectserver"
+  },
+  "remoedev": {
+    "hostname": "localhost",
+    "port": 5678
   },
   "dependencies": {
     "expo": "^32.0.0",
@@ -17,6 +22,7 @@
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
+    "prettier": "^1.15.3",
     "redux-logger": "^3.0.6",
     "remote-redux-devtools": "^0.5.16",
     "remotedev-rn-debugger": "^0.8.3"
